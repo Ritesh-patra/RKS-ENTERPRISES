@@ -1,0 +1,2495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKS Enterprises | Hiring, Recruitment & Job Placement Services</title>
+    <meta name="description"
+        content="RKS Enterprises is a trusted recruitment and staffing company providing hiring, job placement, and workforce solutions. We connect talented candidates with the right career opportunities.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eef6fb',
+                            100: '#d9eaf5',
+                            200: '#bcd8ea',
+                            300: '#8fc0db',
+                            400: '#5ea4c9',
+                            500: '#2F6DA4', // main brand color
+                            600: '#285f90',
+                            700: '#1E4F7A', // dark blue (header/footer)
+                            800: '#173d5e',
+                            900: '#102c45',
+                            950: '#0a1c2e',
+                        },
+                        accent: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#FFA726', // CTA button color
+                            600: '#ea8c1a',
+                            700: '#c96f12',
+                            800: '#9f5710',
+                            900: '#7c4410',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 1s ease-out forwards',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+                        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Base state: hidden and slightly moved down */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            /* Smooth transition setup */
+        }
+
+        /* Target state: visible and in final position */
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(8, 47, 73, 0.95) 0%, rgba(12, 74, 110, 0.9) 50%, rgba(7, 89, 133, 0.85) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23082f49;stop-opacity:1" /><stop offset="100%" style="stop-color:%230c4a6e;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad1)" width="1200" height="800"/><g fill="%23f59e0b" opacity="0.1"><circle cx="200" cy="200" r="100"/><circle cx="800" cy="300" r="80"/><circle cx="1000" cy="600" r="120"/><circle cx="400" cy="500" r="60"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+
+        .parallax {
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #082f49;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #f59e0b;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d97706;
+        }
+
+        /* Loading animation */
+        .loading-spinner {
+            border: 3px solid rgba(245, 158, 11, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #f59e0b;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Enhanced button styles */
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Enhanced card styles */
+        .card-enhanced {
+            background: linear-gradient(145deg, rgba(7, 89, 133, 0.8), rgba(12, 74, 110, 0.9));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-enhanced:hover {
+            background: linear-gradient(145deg, rgba(7, 89, 133, 0.9), rgba(12, 74, 110, 1));
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        /* Floating elements */
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(2n) {
+            animation-delay: -2s;
+        }
+
+        .floating-element:nth-child(3n) {
+            animation-delay: -4s;
+        }
+    </style>
+</head>
+
+
+<body class="font-inter w-[100vw]  relative bg-primary-950 text-white smooth-scroll">
+
+    <!-- Navigation -->
+    <nav class="top-0 w-full z-50 transition-all absolute duration-500 bg-transparent py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center">
+
+                <div class="flex items-center">
+                    <img src="images/logo.png" class="h-16" alt="">
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-10">
+                    <a href="#home"
+                        class="text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">Home</a>
+                    <a href="#services"
+                        class="text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">Services</a>
+                    <a href="#industries"
+                        class="text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">Industries</a>
+                    <a href="#about"
+                        class="text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">About</a>
+
+                    <a href="#careers"
+                        class="relative text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">
+                        Careers
+                        <span
+                            class="absolute -top-3 -right-6 text-[8px] bg-red-600 text-white px-1 py-0.5 rounded animate-pulse">NEW</span>
+                    </a>
+
+                    <a href="#faqs"
+                        class="text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">FAQs</a>
+                    <a href="#contact"
+                        class="text-xs font-bold tracking-[0.2em] text-white hover:text-gold-400 transition-all uppercase">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-6 text-white">
+                    <button class="hover:text-gold-400 transition-colors">
+                        <i class="fas fa-search text-lg"></i>
+                    </button>
+
+                    <button class="flex flex-col gap-1.5 group" id="mobile-menu-btn">
+                        <span class="h-0.5 w-8 bg-white group-hover:bg-gold-500 transition-all"></span>
+                        <span class="h-0.5 w-6 bg-white group-hover:bg-gold-500 transition-all self-end"></span>
+                        <span class="h-0.5 w-8 bg-white group-hover:bg-gold-500 transition-all"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="lg:hidden hidden mt-4 bg-black/90 backdrop-blur-xl border border-white/10 rounded-xl p-8"
+                id="mobile-menu">
+                <div class="flex flex-col space-y-6 text-center">
+                    <a href="#home" class="text-sm font-bold tracking-widest text-white uppercase">Home</a>
+                    <a href="#services" class="text-sm font-bold tracking-widest text-white uppercase">Services</a>
+                    <a href="#industries" class="text-sm font-bold tracking-widest text-white uppercase">Industries</a>
+                    <a href="#about" class="text-sm font-bold tracking-widest text-white uppercase">About</a>
+                    <a href="#careers" class="text-sm font-bold tracking-widest text-white uppercase">Careers <span
+                            class="text-red-500 text-[10px]">(NEW)</span></a>
+                    <a href="#contact"
+                        class="bg-forest-600 text-cream-50 py-4 rounded-full font-bold uppercase tracking-widest">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[100vh] w-full flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/landing.jpeg" alt="Desktop Background"
+                class="hidden md:block w-full h-full object-cover object-top">
+
+            <img src="images/mobile.jpeg" alt="Mobile Background" class="block md:hidden w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-black/55"></div>
+        </div>
+
+        <div class="max-w-7xl w-full mx-auto px-6 relative z-10">
+            <div class="max-w-2xl animate-on-scroll">
+
+                <div class="mt-5">
+                    <span
+                        class="text-gold-500 font-bold tracking-widest uppercase text-xs md:text-sm border-l-4 border-gold-500 pl-3">
+                        Top-Tier Recruitment Partners
+                    </span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl md:text-8xl font-black text-white leading-none mb-6">
+                    ELITE<br>
+                    <span class="text-gold-400">TALENT</span><br>
+                    SOLUTIONS
+                </h1>
+
+                <p class="text-base md:text-xl text-cream-100 mb-8 max-w-lg leading-relaxed opacity-90">
+                    Bridging the gap between world-class professionals and industry leaders.
+                    Strategic staffing across 50+ global sectors.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="#contact"
+                        class="bg-forest-600 hover:bg-forest-700 text-cream-50 px-6 py-3 md:px-8 md:py-4 rounded-sm font-bold transition-all flex items-center gap-3 text-sm md:text-base">
+                        HIRE TOP TALENT
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about"
+                        class="backdrop-blur-md bg-white/10 border border-white/20 hover:bg-white/20 text-white px-6 py-3 md:px-8 md:py-4 rounded-sm font-bold transition-all text-sm md:text-base">
+                        OUR PROCESS
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-6 border-t border-white/20">
+                    <div>
+                        <div class="text-xl md:text-2xl font-bold text-gold-400">15+</div>
+                        <div class="text-[10px] md:text-xs uppercase tracking-wider text-cream-200">Years Experience
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-xl md:text-2xl font-bold text-gold-400">500+</div>
+                        <div class="text-[10px] md:text-xs uppercase tracking-wider text-cream-200">Expert Recruiters
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-xl md:text-2xl font-bold text-gold-400">10k+</div>
+                        <div class="text-[10px] md:text-xs uppercase tracking-wider text-cream-200">Placements</div>
+                    </div>
+                    <div>
+                        <div class="text-xl md:text-2xl font-bold text-gold-400">Global</div>
+                        <div class="text-[10px] md:text-xs uppercase tracking-wider text-cream-200">Network</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-20">
+            <div class="relative group cursor-pointer">
+                <div
+                    class="hidden md:block absolute -top-12 right-0 bg-white text-forest-900 px-4 py-2 rounded-lg text-sm font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+                    How can we help?
+                </div>
+                <div
+                    class="w-12 h-12 md:w-16 md:h-16 bg-gold-500 hover:bg-gold-600 text-forest-900 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+                    <i class="fas fa-comment-dots text-xl md:text-2xl"></i>
+                    <span
+                        class="absolute top-0 right-0 w-4 h-4 md:w-5 md:h-5 bg-red-600 text-white text-[8px] md:text-[10px] flex items-center justify-center rounded-full border-2 border-white">1</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-[#FFFFFF] relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gold-200/20 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+
+                <div class="w-full lg:w-1/2 animate-on-scroll">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden border-4 border-gray-100 shadow-2xl relative z-10">
+                            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80"
+                                alt="Professional Team" class="w-full h-[500px] object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+
+                        <div
+                            class="absolute -bottom-6 -right-6 md:right-10 bg-[#1e3a8a] text-white p-8 rounded-xl shadow-2xl z-20 max-w-[240px] border-b-4 border-[#d97706]">
+                            <div class="text-4xl font-black text-[#fbbf24] mb-2">15+</div>
+                            <p class="text-xs font-bold leading-tight uppercase tracking-widest">
+                                Years of Excellence in Recruitment
+                            </p>
+                        </div>
+
+                        <div
+                            class="absolute top-6 -left-6 w-full h-full border-2 border-[#d97706] rounded-2xl z-0 opacity-20">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 animate-on-scroll">
+                    <div class="mb-8">
+                        <span class="text-[#b45309] font-extrabold tracking-[0.2em] uppercase text-sm block mb-4">
+                            About RKS Enterprises
+                        </span>
+                        <h2 class="text-4xl md:text-5xl font-black text-[#1e3a8a] leading-tight mb-6">
+                            Connecting Elite Talent with <span class="text-[#d97706]">Industry Leaders</span>
+                        </h2>
+                        <div class="w-24 h-2 bg-[#d97706]"></div>
+                    </div>
+
+                    <div class="space-y-6 text-gray-800 text-lg leading-relaxed">
+                        <p>
+                            <strong class="text-[#1e3a8a]">RKS Enterprises</strong> is a trusted recruitment agency
+                            committed to connecting the right talent with the right opportunities. We provide reliable
+                            hiring solutions for global companies and aspiring professionals.
+                        </p>
+                        <p class="border-l-4 border-[#d97706] pl-6 italic bg-gray-50 py-4">
+                            We proudly partner with national and international clients, particularly in the <span
+                                class="text-[#1e3a8a] font-bold">manufacturing sector</span>, ensuring quality
+                            candidates and timely delivery.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                        <div
+                            class="flex items-start gap-4 p-5 bg-[#f8fafc] rounded-xl border border-gray-200 shadow-sm hover:border-[#d97706] transition-all">
+                            <div class="text-[#d97706] mt-1">
+                                <i class="fas fa-users-cog text-3xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black text-[#1e3a8a] uppercase text-xs tracking-wider mb-1">Skilled
+                                    Staffing</h4>
+                                <p class="text-sm text-gray-600">Expertise in industrial & entry-level hiring.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-4 p-5 bg-[#f8fafc] rounded-xl border border-gray-200 shadow-sm hover:border-[#1e3a8a] transition-all">
+                            <div class="text-[#1e3a8a] mt-1">
+                                <i class="fas fa-handshake text-3xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black text-[#1e3a8a] uppercase text-xs tracking-wider mb-1">Transparent
+                                    Process</h4>
+                                <p class="text-sm text-gray-600">Complete end-to-end recruitment support.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <a href="#contact"
+                            class="inline-flex items-center gap-4 bg-[#1e3a8a] hover:bg-[#172554] text-white px-10 py-5 rounded-md font-black tracking-widest transition-all shadow-[0_10px_20px_rgba(30,58,138,0.3)] hover:-translate-y-1 uppercase text-sm">
+                            Partner With Us
+                            <i class="fas fa-arrow-right text-xs text-[#fbbf24]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <sec-tion id="services" class="py-24 lg:py-32 bg-[#0B2D72] relative overflow-hidden font-sans">
+        <div
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#0992C2]/10 rounded-full blur-[120px] pointer-events-none -mt-32 -mr-32">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#F6E7BC]/5 rounded-full blur-[100px] pointer-events-none -mb-32 -ml-32">
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <div
+                    class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#0992C2] animate-pulse"></span>
+                    <span class="text-[#F6E7BC] text-xs font-bold uppercase tracking-[0.2em]">Our Expertise</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6 tracking-tight">
+                    Services We <span class="text-[#0992C2] italic">Offer</span>
+                </h2>
+                <p class="text-[#F6E7BC]/70 text-lg font-medium leading-relaxed">
+                    At RKS Enterprises, we provide comprehensive recruitment solutions tailored to meet the diverse
+                    needs of businesses and job seekers.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                <div
+                    class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(9,146,194,0.3)]">
+                    <div
+                        class="absolute right-3 bottom-2 text-8xl font-black text-white/5 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0">
+                        01</div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-14 rounded-2xl bg-gradient-to-br from-[#0992C2] to-[#0B2D72] flex items-center justify-center mb-6 shadow-lg border border-[#0992C2]/50 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-users-cog text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 tracking-wide">Manpower Recruitment</h3>
+                        <p class="text-[#F6E7BC]/60 text-sm leading-relaxed font-medium">
+                            We specialise in hiring skilled, semi-skilled, and unskilled workforce for various
+                            industries, especially manufacturing.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(9,146,194,0.3)] lg:mt-6">
+                    <div
+                        class="absolute right-3 bottom-2 text-8xl font-black text-white/5 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0">
+                        02</div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-14 rounded-2xl bg-gradient-to-br from-[#0992C2] to-[#0B2D72] flex items-center justify-center mb-6 shadow-lg border border-[#0992C2]/50 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-layer-group text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 tracking-wide">Bulk Hiring Solutions</h3>
+                        <p class="text-[#F6E7BC]/60 text-sm leading-relaxed font-medium">
+                            Efficient handling of large-scale recruitment drives to meet urgent and high-volume staffing
+                            requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(9,146,194,0.3)]">
+                    <div
+                        class="absolute right-3 bottom-2 text-8xl font-black text-white/5 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0">
+                        03</div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-14 rounded-2xl bg-gradient-to-br from-[#0992C2] to-[#0B2D72] flex items-center justify-center mb-6 shadow-lg border border-[#0992C2]/50 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-user-graduate text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 tracking-wide">ITI & Fresher Hiring</h3>
+                        <p class="text-[#F6E7BC]/60 text-sm leading-relaxed font-medium">
+                            Dedicated recruitment for ITI candidates, diploma holders, and freshers to support
+                            entry-level workforce needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(9,146,194,0.3)] lg:-mt-6">
+                    <div
+                        class="absolute right-3 bottom-2 text-8xl font-black text-white/5 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0">
+                        04</div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-14 rounded-2xl bg-gradient-to-br from-[#0992C2] to-[#0B2D72] flex items-center justify-center mb-6 shadow-lg border border-[#0992C2]/50 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-user-tie text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 tracking-wide">Permanent Staffing</h3>
+                        <p class="text-[#F6E7BC]/60 text-sm leading-relaxed font-medium">
+                            We help companies find the right candidates for long-term roles, ensuring stability and
+                            growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(9,146,194,0.3)]">
+                    <div
+                        class="absolute right-3 bottom-2 text-8xl font-black text-white/5 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0">
+                        05</div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-14 rounded-2xl bg-gradient-to-br from-[#0992C2] to-[#0B2D72] flex items-center justify-center mb-6 shadow-lg border border-[#0992C2]/50 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-file-signature text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 tracking-wide">Contract Staffing</h3>
+                        <p class="text-[#F6E7BC]/60 text-sm leading-relaxed font-medium">
+                            Flexible staffing solutions for short-term projects or temporary workforce requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(9,146,194,0.3)] lg:-mt-6">
+                    <div
+                        class="absolute right-3 bottom-2 text-8xl font-black text-white/5 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0">
+                        06</div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-14 rounded-2xl bg-gradient-to-br from-[#0992C2] to-[#0B2D72] flex items-center justify-center mb-6 shadow-lg border border-[#0992C2]/50 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-industry text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 tracking-wide">Industry-Specific Hiring</h3>
+                        <p class="text-[#F6E7BC]/60 text-sm leading-relaxed font-medium">
+                            Expertise in recruitment for manufacturing, production, automobile, and related sectors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 lg:col-span-3 lg:mt-6">
+                    <div
+                        class="group relative bg-gradient-to-r from-[#0992C2] to-[#066A8F] rounded-[2.5rem] p-8 md:p-12 overflow-hidden shadow-2xl hover:shadow-[0_30px_60px_-15px_rgba(9,146,194,0.4)] transition-all duration-500 hover:-translate-y-1 border border-white/10">
+                        <div
+                            class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-40 h-40 bg-[#0B2D72]/20 rounded-full blur-2xl transform -translate-x-1/2 translate-y-1/2">
+                        </div>
+
+                        <div
+                            class="absolute right-4 bottom-[-20px] text-[12rem] font-black text-white/10 leading-none group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+                            07</div>
+
+                        <div
+                            class="relative z-10 flex flex-col md:flex-row items-center md:items-center gap-8 text-center md:text-left">
+                            <div
+                                class="size-24 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shrink-0 shadow-inner group-hover:rotate-12 transition-transform duration-500">
+                                <i class="fas fa-sync-alt text-4xl text-[#F6E7BC]"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl md:text-4xl font-black text-white mb-4 tracking-tight">End-to-End
+                                    Recruitment Support</h3>
+                                <p class="text-white/90 text-base md:text-lg leading-relaxed max-w-4xl font-medium">
+                                    From sourcing and screening to final placement and onboarding, we meticulously
+                                    manage the complete hiring process to ensure excellence at every step.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </sec-tion>
+
+    <!-- Properties Section -->
+    <section id="process" class="py-24 bg-[#F6E7BC] relative overflow-hidden">
+        <div
+            class="absolute top-0 left-0 w-[600px] h-[600px] bg-[#0992C2]/10 rounded-full -ml-48 -mt-48 blur-[120px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#0B2D72]/10 rounded-full -mr-32 -mb-32 blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+
+            <div class="text-center mb-20">
+                <span class="text-[#0992C2] font-black tracking-[0.3em] uppercase text-xs sm:text-sm block mb-4">
+                    How We Work
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0B2D72] leading-tight mb-6">
+                    Our Recruitment <span class="text-[#0992C2] italic">Journey</span>
+                </h2>
+                <div class="w-24 h-1.5 bg-[#0992C2] mx-auto mb-6 rounded-full"></div>
+                <p class="text-[#0B2D72]/80 text-lg max-w-2xl mx-auto font-medium leading-relaxed">
+                    Experience a structured, transparent, and efficient process designed to connect elite talent with
+                    the perfect opportunity.
+                </p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                <div
+                    class="absolute left-6 md:left-1/2 top-4 bottom-4 w-1 bg-gradient-to-b from-[#0992C2]/0 via-[#0992C2]/40 to-[#0992C2]/0 transform md:-translate-x-1/2 rounded-full">
+                </div>
+
+                <div class="relative flex items-center justify-between mb-12 lg:mb-16 group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-12 bg-white rounded-full border-4 border-[#0992C2] flex items-center justify-center text-[#0B2D72] font-black text-lg shadow-lg z-10 group-hover:scale-125 group-hover:bg-[#0992C2] group-hover:text-white transition-all duration-500">
+                        1
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-0 md:pr-12 text-left md:text-right">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl border border-[#0992C2]/10 group-hover:shadow-2xl group-hover:border-[#0992C2]/50 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#0992C2] mb-4 md:hidden text-3xl"><i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-[#0B2D72] mb-3">Requirement Understanding</h3>
+                            <p class="text-[#0B2D72]/70 font-medium leading-relaxed">We begin by understanding the
+                                client’s hiring needs, job roles, skills required, and organisational culture to ensure
+                                precise candidate selection.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex w-[45%] pl-12 items-center justify-start">
+                        <div
+                            class="text-[#0992C2] text-7xl opacity-20 group-hover:opacity-100 group-hover:scale-110 group-hover:translate-x-4 transition-all duration-500">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between mb-12 lg:mb-16 group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-12 bg-white rounded-full border-4 border-[#0992C2] flex items-center justify-center text-[#0B2D72] font-black text-lg shadow-lg z-10 group-hover:scale-125 group-hover:bg-[#0992C2] group-hover:text-white transition-all duration-500">
+                        2
+                    </div>
+                    <div class="hidden md:flex w-[45%] pr-12 items-center justify-end">
+                        <div
+                            class="text-[#0B2D72] text-7xl opacity-10 group-hover:opacity-100 group-hover:scale-110 group-hover:-translate-x-4 transition-all duration-500">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-12 text-left">
+                        <div
+                            class="bg-[#0B2D72] p-8 rounded-3xl shadow-xl border border-[#0B2D72] group-hover:shadow-2xl group-hover:shadow-[#0B2D72]/30 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#F6E7BC] mb-4 md:hidden text-3xl"><i class="fas fa-users"></i></div>
+                            <h3 class="text-2xl font-black text-white mb-3">Sourcing Candidates</h3>
+                            <p class="text-white/80 font-medium leading-relaxed">Our team sources potential candidates
+                                through multiple channels including databases, job portals, referrals, and industry
+                                networks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between mb-12 lg:mb-16 group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-12 bg-white rounded-full border-4 border-[#0992C2] flex items-center justify-center text-[#0B2D72] font-black text-lg shadow-lg z-10 group-hover:scale-125 group-hover:bg-[#0992C2] group-hover:text-white transition-all duration-500">
+                        3
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-0 md:pr-12 text-left md:text-right">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl border border-[#0992C2]/10 group-hover:shadow-2xl group-hover:border-[#0992C2]/50 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#0992C2] mb-4 md:hidden text-3xl"><i class="fas fa-filter"></i></div>
+                            <h3 class="text-2xl font-black text-[#0B2D72] mb-3">Screening & Shortlisting</h3>
+                            <p class="text-[#0B2D72]/70 font-medium leading-relaxed">Candidates are carefully screened
+                                based on their qualifications, experience, and suitability for the role. Only the most
+                                relevant profiles are shortlisted.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex w-[45%] pl-12 items-center justify-start">
+                        <div
+                            class="text-[#0992C2] text-7xl opacity-20 group-hover:opacity-100 group-hover:scale-110 group-hover:translate-x-4 transition-all duration-500">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between mb-12 lg:mb-16 group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-12 bg-white rounded-full border-4 border-[#0992C2] flex items-center justify-center text-[#0B2D72] font-black text-lg shadow-lg z-10 group-hover:scale-125 group-hover:bg-[#0992C2] group-hover:text-white transition-all duration-500">
+                        4
+                    </div>
+                    <div class="hidden md:flex w-[45%] pr-12 items-center justify-end">
+                        <div
+                            class="text-[#0B2D72] text-7xl opacity-10 group-hover:opacity-100 group-hover:scale-110 group-hover:-translate-x-4 transition-all duration-500">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-12 text-left">
+                        <div
+                            class="bg-[#0B2D72] p-8 rounded-3xl shadow-xl border border-[#0B2D72] group-hover:shadow-2xl group-hover:shadow-[#0B2D72]/30 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#F6E7BC] mb-4 md:hidden text-3xl"><i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-3">Interview Coordination</h3>
+                            <p class="text-white/80 font-medium leading-relaxed">We coordinate interviews between
+                                clients and candidates, ensuring smooth communication and efficient scheduling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between mb-12 lg:mb-16 group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-12 bg-white rounded-full border-4 border-[#0992C2] flex items-center justify-center text-[#0B2D72] font-black text-lg shadow-lg z-10 group-hover:scale-125 group-hover:bg-[#0992C2] group-hover:text-white transition-all duration-500">
+                        5
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-0 md:pr-12 text-left md:text-right">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl border border-[#0992C2]/10 group-hover:shadow-2xl group-hover:border-[#0992C2]/50 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#0992C2] mb-4 md:hidden text-3xl"><i class="fas fa-handshake"></i></div>
+                            <h3 class="text-2xl font-black text-[#0B2D72] mb-3">Selection & Offer Process</h3>
+                            <p class="text-[#0B2D72]/70 font-medium leading-relaxed">Once the candidate is selected, we
+                                assist in the offer process and ensure clear communication between both parties.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex w-[45%] pl-12 items-center justify-start">
+                        <div
+                            class="text-[#0992C2] text-7xl opacity-20 group-hover:opacity-100 group-hover:scale-110 group-hover:translate-x-4 transition-all duration-500">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between mb-12 lg:mb-16 group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-12 bg-white rounded-full border-4 border-[#0992C2] flex items-center justify-center text-[#0B2D72] font-black text-lg shadow-lg z-10 group-hover:scale-125 group-hover:bg-[#0992C2] group-hover:text-white transition-all duration-500">
+                        6
+                    </div>
+                    <div class="hidden md:flex w-[45%] pr-12 items-center justify-end">
+                        <div
+                            class="text-[#0B2D72] text-7xl opacity-10 group-hover:opacity-100 group-hover:scale-110 group-hover:-translate-x-4 transition-all duration-500">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-12 text-left">
+                        <div
+                            class="bg-[#0B2D72] p-8 rounded-3xl shadow-xl border border-[#0B2D72] group-hover:shadow-2xl group-hover:shadow-[#0B2D72]/30 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#F6E7BC] mb-4 md:hidden text-3xl"><i class="fas fa-user-check"></i></div>
+                            <h3 class="text-2xl font-black text-white mb-3">Onboarding Support</h3>
+                            <p class="text-white/80 font-medium leading-relaxed">We provide support during the joining
+                                process to ensure a smooth transition for the candidate into the organisation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between group">
+                    <div
+                        class="absolute left-6 md:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 size-14 bg-[#0992C2] rounded-full border-4 border-white flex items-center justify-center text-white font-black text-xl shadow-lg z-10 group-hover:scale-125 transition-all duration-500">
+                        7
+                    </div>
+                    <div class="w-full md:w-[45%] pl-20 md:pl-0 md:pr-12 text-left md:text-right">
+                        <div
+                            class="bg-[#0992C2] p-8 rounded-3xl shadow-xl group-hover:shadow-2xl group-hover:shadow-[#0992C2]/40 transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                            <div class="text-[#F6E7BC] mb-4 md:hidden text-3xl"><i class="fas fa-headset"></i></div>
+                            <h3 class="text-2xl font-black text-white mb-3">Post-Placement Follow-up</h3>
+                            <p class="text-white/90 font-bold leading-relaxed">Our relationship doesn’t end with
+                                placement—we follow up with both client and candidate to ensure satisfaction and
+                                long-term success.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex w-[45%] pl-12 items-center justify-start">
+                        <div
+                            class="text-[#0992C2] text-7xl opacity-40 group-hover:opacity-100 group-hover:scale-110 group-hover:translate-x-4 transition-all duration-500">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="industries" class="py-24 lg:py-32 bg-[#F6E7BC] relative overflow-hidden font-sans">
+        <div
+            class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#0992C2]/10 rounded-full blur-[100px] pointer-events-none -mt-32 -ml-32">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#0B2D72]/5 rounded-full blur-[120px] pointer-events-none -mb-32 -mr-32">
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-[#0B2D72]/5 border border-[#0B2D72]/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#0992C2] animate-ping"></span>
+                    <span class="text-[#0B2D72] text-xs font-black uppercase tracking-[0.2em]">Industries We
+                        Serve</span>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0B2D72] leading-tight mb-6 tracking-tight">
+                    Empowering <span class="text-[#0992C2] italic">Diverse</span> Sectors
+                </h2>
+                <p class="text-[#0B2D72]/70 text-lg font-medium leading-relaxed">
+                    At RKS Enterprises, we cater to a wide range of industries by providing skilled manpower and
+                    tailored recruitment solutions to meet diverse business needs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                <div
+                    class="group relative bg-[#0B2D72] rounded-[2rem] p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(11,45,114,0.4)] border border-[#0992C2]/20 hover:border-[#0992C2]">
+                    <div
+                        class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl from-[#0992C2]/20 to-transparent rounded-bl-[100%] transition-all duration-500 group-hover:scale-125 z-0">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 border border-white/10 group-hover:bg-[#0992C2] transition-colors duration-500 shadow-inner">
+                            <i
+                                class="fas fa-industry text-3xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">1. Manufacturing</h3>
+                        <p class="text-[#F6E7BC]/70 leading-relaxed text-sm font-medium">
+                            Specialised hiring for production, assembly, and plant operations roles to keep your
+                            facilities running smoothly.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#0B2D72] rounded-[2rem] p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(11,45,114,0.4)] border border-[#0992C2]/20 hover:border-[#0992C2] lg:mt-6">
+                    <div
+                        class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl from-[#0992C2]/20 to-transparent rounded-bl-[100%] transition-all duration-500 group-hover:scale-125 z-0">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 border border-white/10 group-hover:bg-[#0992C2] transition-colors duration-500 shadow-inner">
+                            <i
+                                class="fas fa-car-side text-3xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">2. Automobile</h3>
+                        <p class="text-[#F6E7BC]/70 leading-relaxed text-sm font-medium">
+                            Providing workforce for automobile manufacturing, service, and spare parts sectors.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#0B2D72] rounded-[2rem] p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(11,45,114,0.4)] border border-[#0992C2]/20 hover:border-[#0992C2]">
+                    <div
+                        class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl from-[#0992C2]/20 to-transparent rounded-bl-[100%] transition-all duration-500 group-hover:scale-125 z-0">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 border border-white/10 group-hover:bg-[#0992C2] transition-colors duration-500 shadow-inner">
+                            <i class="fas fa-cogs text-3xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">3. Engineering & Tech</h3>
+                        <p class="text-[#F6E7BC]/70 leading-relaxed text-sm font-medium">
+                            Recruitment of ITI, diploma, and skilled technical professionals for precise engineering
+                            needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#0B2D72] rounded-[2rem] p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(11,45,114,0.4)] border border-[#0992C2]/20 hover:border-[#0992C2] lg:-mt-6">
+                    <div
+                        class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl from-[#0992C2]/20 to-transparent rounded-bl-[100%] transition-all duration-500 group-hover:scale-125 z-0">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 border border-white/10 group-hover:bg-[#0992C2] transition-colors duration-500 shadow-inner">
+                            <i
+                                class="fas fa-hard-hat text-3xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">4. Construction & Infra</h3>
+                        <p class="text-[#F6E7BC]/70 leading-relaxed text-sm font-medium">
+                            Supplying durable manpower for large-scale construction projects and infrastructure
+                            development.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#0B2D72] rounded-[2rem] p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(11,45,114,0.4)] border border-[#0992C2]/20 hover:border-[#0992C2]">
+                    <div
+                        class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl from-[#0992C2]/20 to-transparent rounded-bl-[100%] transition-all duration-500 group-hover:scale-125 z-0">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 border border-white/10 group-hover:bg-[#0992C2] transition-colors duration-500 shadow-inner">
+                            <i
+                                class="fas fa-truck-loading text-3xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">5. Logistics & Supply</h3>
+                        <p class="text-[#F6E7BC]/70 leading-relaxed text-sm font-medium">
+                            Targeted hiring for warehouse operations, fast-paced packaging, and distribution roles.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative bg-[#0B2D72] rounded-[2rem] p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(11,45,114,0.4)] border border-[#0992C2]/20 hover:border-[#0992C2] lg:-mt-6">
+                    <div
+                        class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl from-[#0992C2]/20 to-transparent rounded-bl-[100%] transition-all duration-500 group-hover:scale-125 z-0">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="size-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 border border-white/10 group-hover:bg-[#0992C2] transition-colors duration-500 shadow-inner">
+                            <i
+                                class="fas fa-shopping-bag text-3xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">6. FMCG & Retail</h3>
+                        <p class="text-[#F6E7BC]/70 leading-relaxed text-sm font-medium">
+                            Supporting critical staffing needs for sales, store operations, and retail backend roles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 lg:col-span-3 lg:mt-4">
+                    <div
+                        class="group relative bg-white rounded-[2.5rem] p-8 md:p-10 overflow-hidden shadow-[0_20px_40px_-15px_rgba(9,146,194,0.2)] border border-[#0992C2]/20 transition-all duration-500 hover:-translate-y-1">
+                        <div class="absolute -right-20 -top-20 w-64 h-64 bg-[#F6E7BC]/50 rounded-full blur-3xl"></div>
+
+                        <div
+                            class="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-8 text-center md:text-left">
+                            <div
+                                class="size-20 rounded-3xl bg-[#0992C2]/10 flex items-center justify-center shrink-0 border border-[#0992C2]/20 group-hover:scale-110 transition-transform duration-500 group-hover:bg-[#0992C2]">
+                                <i
+                                    class="fas fa-globe text-4xl text-[#0992C2] group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl md:text-3xl font-black text-[#0B2D72] mb-3">7. General Staffing
+                                    Across Sectors</h3>
+                                <p class="text-[#0B2D72]/70 text-base md:text-lg leading-relaxed max-w-4xl font-medium">
+                                    Beyond specialised industries, we offer flexible recruitment solutions for various
+                                    other sectors, expertly adapting to your unique client requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="career-opportunity" class="py-24 lg:py-32 bg-[#F6E7BC] relative overflow-hidden font-sans">
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0992C2]/10 rounded-full blur-[100px] pointer-events-none -mt-32 -mr-32">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#0B2D72]/5 rounded-full blur-[120px] pointer-events-none -mb-32 -ml-32">
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-[#0B2D72]/5 border border-[#0B2D72]/10 mb-6">
+                    <span class="text-[#0992C2]"><i class="fas fa-rocket"></i></span>
+                    <span class="text-[#0B2D72] text-xs font-black uppercase tracking-[0.2em]">Career Opportunity</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-[#0B2D72] leading-tight mb-4 tracking-tight">
+                    Automobile Spare Parts <span class="text-[#0992C2] italic">Manufacturing</span>
+                </h2>
+                <div class="w-24 h-1.5 bg-[#0992C2] mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-[1.5fr_1fr] gap-8 items-start">
+
+                <div class="space-y-8">
+
+                    <div
+                        class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-[#0992C2]/10 hover:border-[#0992C2]/30 transition-all duration-300">
+                        <h3 class="text-2xl font-black text-[#0B2D72] mb-4 flex items-center gap-3">
+                            <i class="fas fa-building text-[#0992C2]"></i> About the Company
+                        </h3>
+                        <p class="text-[#0B2D72]/70 leading-relaxed font-medium mb-8">
+                            We are hiring for a leading listed automobile spare parts manufacturing company in India,
+                            known for delivering high-quality and reliable components to the automotive industry. The
+                            company focuses on innovation, precision engineering, and strict quality standards, serving
+                            both domestic and international markets.
+                        </p>
+
+                        <div
+                            class="inline-flex items-center gap-4 bg-[#F8FAFC] border border-[#0B2D72]/5 p-4 rounded-2xl w-full sm:w-auto">
+                            <div
+                                class="size-12 rounded-xl bg-[#0992C2]/10 flex items-center justify-center text-[#0992C2] shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-[#0B2D72]/50 uppercase tracking-widest mb-1">Job
+                                    Location</p>
+                                <p class="font-bold text-[#0B2D72]">Bhiwadi, Rajasthan <span
+                                        class="text-[#0992C2] text-sm font-medium">(~90 km from New Delhi)</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-[#0992C2]/10 hover:border-[#0992C2]/30 transition-all duration-300">
+                        <h3 class="text-2xl font-black text-[#0B2D72] mb-6 flex items-center gap-3">
+                            <i class="fas fa-wallet text-[#0992C2]"></i> Available Categories & Salary
+                        </h3>
+                        <p class="text-xs font-bold text-[#0B2D72]/50 uppercase tracking-widest mb-6">Net Pay Structure
+                            (Per Month)</p>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#F8FAFC] border border-transparent hover:border-[#0992C2]/20 hover:bg-white hover:shadow-md transition-all group">
+                                <div class="font-bold text-[#0B2D72] text-sm">Unskilled <span
+                                        class="block text-xs text-[#0992C2] font-medium mt-0.5">(10th / 12th)</span>
+                                </div>
+                                <div class="text-lg font-black text-[#0B2D72] bg-[#F6E7BC]/50 px-3 py-1 rounded-lg">
+                                    ₹14,164</div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#F8FAFC] border border-transparent hover:border-[#0992C2]/20 hover:bg-white hover:shadow-md transition-all group">
+                                <div class="font-bold text-[#0B2D72] text-sm">Semi-Skilled <span
+                                        class="block text-xs text-[#0992C2] font-medium mt-0.5">(Housekeeping)</span>
+                                </div>
+                                <div class="text-lg font-black text-[#0B2D72] bg-[#F6E7BC]/50 px-3 py-1 rounded-lg">
+                                    ₹15,062</div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#F8FAFC] border border-transparent hover:border-[#0992C2]/20 hover:bg-white hover:shadow-md transition-all group">
+                                <div class="font-bold text-[#0B2D72] text-sm">Skilled <span
+                                        class="block text-xs text-[#0992C2] font-medium mt-0.5">(BA / B.Com)</span>
+                                </div>
+                                <div class="text-lg font-black text-[#0B2D72] bg-[#F6E7BC]/50 px-3 py-1 rounded-lg">
+                                    ₹16,326</div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#F8FAFC] border border-transparent hover:border-[#0992C2]/20 hover:bg-white hover:shadow-md transition-all group">
+                                <div class="font-bold text-[#0B2D72] text-sm">High Skilled <span
+                                        class="block text-xs text-[#0992C2] font-medium mt-0.5">(ITI / B.Sc)</span>
+                                </div>
+                                <div class="text-lg font-black text-[#0B2D72] bg-[#F6E7BC]/50 px-3 py-1 rounded-lg">
+                                    ₹17,211</div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#F8FAFC] border border-transparent hover:border-[#0992C2]/20 hover:bg-white hover:shadow-md transition-all group">
+                                <div class="font-bold text-[#0B2D72] text-sm">Diploma Holders</div>
+                                <div class="text-lg font-black text-[#0B2D72] bg-[#F6E7BC]/50 px-3 py-1 rounded-lg">
+                                    ₹17,408</div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#F8FAFC] border border-transparent hover:border-[#0992C2]/20 hover:bg-white hover:shadow-md transition-all group">
+                                <div class="font-bold text-[#0B2D72] text-sm">Operator Forging</div>
+                                <div class="text-lg font-black text-[#0B2D72] bg-[#F6E7BC]/50 px-3 py-1 rounded-lg">
+                                    ₹18,827</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#0B2D72] rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative overflow-hidden h-full flex flex-col justify-between border border-[#0992C2]/20">
+                    <div
+                        class="absolute -right-10 -top-10 w-64 h-64 bg-[#0992C2]/20 rounded-full blur-3xl pointer-events-none">
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-black text-white mb-6 flex items-center gap-3">
+                            <div
+                                class="size-8 rounded-lg bg-[#0992C2] flex items-center justify-center text-white text-sm">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            Benefits & Facilities
+                        </h3>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#0992C2] mt-1"></i>
+                                <span class="text-white/80 font-medium text-sm leading-relaxed"><strong
+                                        class="text-white">₹3,000 bonus</strong> after 90 days of good
+                                    performance</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#0992C2] mt-1"></i>
+                                <span class="text-white/80 font-medium text-sm leading-relaxed">Rotational shifts</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#0992C2] mt-1"></i>
+                                <span class="text-white/80 font-medium text-sm leading-relaxed">One-time meal, snacks &
+                                    3 times hi-tea provided</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#0992C2] mt-1"></i>
+                                <span class="text-white/80 font-medium text-sm leading-relaxed">Accommodation available
+                                    (extra charges applicable)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#0992C2] mt-1"></i>
+                                <span class="text-white/80 font-medium text-sm leading-relaxed">Salary revision after
+                                    probation (6 months to 1 year)</span>
+                            </li>
+                        </ul>
+
+                        <h3
+                            class="text-xl font-black text-white mb-6 flex items-center gap-3 pt-6 border-t border-white/10">
+                            <div
+                                class="size-8 rounded-lg bg-white/10 flex items-center justify-center text-[#F6E7BC] text-sm">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            Eligibility
+                        </h3>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i class="fas fa-male text-[#F6E7BC]"></i>
+                                <span class="text-white/90 text-sm font-bold">Male candidates preferred</span>
+                            </li>
+                            <li class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i class="fas fa-map-pin text-[#F6E7BC]"></i>
+                                <span class="text-white/90 text-sm font-bold">Brahmapur location preferred</span>
+                            </li>
+                            <li class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i class="fas fa-briefcase text-[#F6E7BC]"></i>
+                                <span class="text-white/90 text-sm font-bold">Only serious candidates</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="relative z-10 mt-auto pt-6">
+                        <p class="text-[#F6E7BC] text-sm font-bold leading-relaxed mb-6 italic text-center">
+                            "Start your career with a reputed manufacturing company and grow with industry leaders!"
+                        </p>
+                        <a href="#contact"
+                            class="flex items-center justify-center gap-3 w-full bg-[#0992C2] hover:bg-[#077a10] text-white py-4 rounded-2xl font-black uppercase tracking-widest text-sm transition-all duration-300 shadow-[0_10px_20px_-10px_rgba(9,146,194,0.5)] hover:-translate-y-1">
+                            Apply Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="py-24 lg:py-32 bg-[#0B2D72] relative overflow-hidden font-sans">
+        <div
+            class="absolute top-0 left-0 w-[600px] h-[600px] bg-[#0992C2]/10 rounded-full blur-[120px] pointer-events-none -mt-48 -ml-48">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#F6E7BC]/5 rounded-full blur-[100px] pointer-events-none -mb-32 -mr-32">
+        </div>
+
+        <div class="container mx-auto px-6 max-w-6xl relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-[#0992C2] animate-ping"></span>
+                    <span class="text-[#F6E7BC] text-xs font-black uppercase tracking-[0.2em]">Knowledge Base</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6 tracking-tight">
+                    Frequently Asked <span class="text-[#0992C2] italic">Questions</span>
+                </h2>
+                <p class="text-white/70 text-lg font-medium leading-relaxed">
+                    Find quick answers to common questions about our recruitment process, industries we serve, and how
+                    we operate.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+                <div class="space-y-6">
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">01</span>
+                                    What services does RKS Enterprises provide?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                We offer end-to-end recruitment solutions including manpower hiring, bulk hiring,
+                                ITI/fresher recruitment, and staffing for various industries.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">02</span>
+                                    Which industries do you specialise in?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                We mainly specialise in manufacturing, automobile, engineering, and related industrial
+                                sectors.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">03</span>
+                                    Do you provide jobs for freshers?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                Yes, we actively help ITI candidates, diploma holders, and freshers find suitable job
+                                opportunities.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">04</span>
+                                    Do you work with companies outside India?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                Yes, we work with both national and international clients to fulfil their recruitment
+                                needs.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">05</span>
+                                    How can companies partner with RKS?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                Companies can contact us directly to share their requirements, and our team will assist
+                                with the hiring process.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">06</span>
+                                    How can candidates apply for jobs?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                Candidates can apply by contacting us directly or submitting their details through our
+                                official communication channels.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-[#0992C2]/20 to-transparent rounded-2xl border border-[#0992C2] transition-all duration-300 backdrop-blur-sm group relative overflow-hidden">
+                        <details class="group p-6 cursor-pointer" open>
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm font-black">07</span>
+                                    <span class="flex items-center gap-3">
+                                        Do you charge candidates for job placement?
+                                        <span
+                                            class="hidden sm:inline-flex bg-[#F6E7BC] text-[#0B2D72] text-[10px] px-2 py-1 rounded-md font-black uppercase tracking-widest">100%
+                                            Free</span>
+                                    </span>
+                                </span>
+                                <span
+                                    class="text-[#F6E7BC] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-white text-sm leading-relaxed border-t border-[#0992C2]/30 pt-4 font-medium">
+                                <strong class="text-[#F6E7BC]">No, absolutely not.</strong> We do not charge candidates
+                                any fees for job placement. Our services are entirely free for job seekers.
+                            </div>
+                        </details>
+                    </div>
+
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 hover:border-[#0992C2]/50 transition-all duration-300 backdrop-blur-sm group">
+                        <details class="group p-6 cursor-pointer">
+                            <summary
+                                class="flex justify-between items-center font-bold text-white text-lg outline-none list-none pr-2">
+                                <span class="flex items-center gap-4">
+                                    <span class="text-[#0992C2] text-sm opacity-50 font-black">08</span>
+                                    How long does the recruitment process take?
+                                </span>
+                                <span
+                                    class="text-[#0992C2] transition-transform duration-300 group-open:rotate-180 shrink-0">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div
+                                class="mt-4 text-[#F6E7BC]/70 text-sm leading-relaxed border-t border-white/10 pt-4 font-medium">
+                                The timeline depends on the specific requirement and role, but we always aim for quick,
+                                high-quality, and efficient placements.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-white/50 text-sm mb-4 font-medium">Still have questions?</p>
+                <a href="#contact"
+                    class="inline-flex items-center justify-center gap-3 bg-[#0992C2] hover:bg-[#F6E7BC] text-white hover:text-[#0B2D72] px-8 py-3 rounded-xl font-bold transition-all duration-300">
+                    Contact Our Support Team
+                    <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-10 lg:py-10 bg-[#0B2D72] relative overflow-hidden font-sans">
+        <div
+            class="absolute top-0 right-1/4 w-[400px] h-[400px] bg-[#0992C2]/20 rounded-full blur-[120px] pointer-events-none -mt-32">
+        </div>
+        <div
+            class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-[#F6E7BC]/5 rounded-full blur-[100px] pointer-events-none -mb-32">
+        </div>
+
+        <div class="container mx-auto relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 px-6">
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-[#0992C2] animate-pulse"></span>
+                    <span class="text-[#F6E7BC] text-xs font-black uppercase tracking-[0.2em]">Testimonials</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6 tracking-tight">
+                    What They <span class="text-[#0992C2] italic">Say</span>
+                </h2>
+                <p class="text-white/70 text-lg font-medium leading-relaxed">
+                    Don't just take our word for it. Discover how RKS Enterprises is making a difference for top
+                    businesses and aspiring professionals.
+                </p>
+            </div>
+
+            <div
+                class="flex gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory py-8 px-6 md:px-12 lg:px-20 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+                <div
+                    class="shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px] snap-center bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-xl hover:-translate-y-2 transition-transform duration-500 group border border-white/10">
+                    <i
+                        class="fas fa-quote-right absolute -right-4 -top-4 text-8xl text-[#F6E7BC]/50 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0 rotate-12"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-[#0992C2] text-sm mb-6 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#0B2D72]/80 mb-8 leading-relaxed text-base font-medium min-h-[100px]">
+                            “RKS Enterprises has been a reliable recruitment partner for our organisation. Their ability
+                            to provide quality candidates in a short time is truly impressive.”
+                        </p>
+                        <div class="flex items-center pt-6 border-t border-[#0B2D72]/10">
+                            <div
+                                class="size-12 bg-[#F6E7BC] rounded-full flex items-center justify-center mr-4 shrink-0 text-[#0B2D72]">
+                                <i class="fas fa-user-tie text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-[#0B2D72] text-sm uppercase tracking-wider">Client Feedback
+                                </div>
+                                <div class="text-[#0992C2] text-xs font-bold">Corporate Partner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px] snap-center bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-xl hover:-translate-y-2 transition-transform duration-500 group border border-white/10">
+                    <i
+                        class="fas fa-quote-right absolute -right-4 -top-4 text-8xl text-[#F6E7BC]/50 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0 rotate-12"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-[#0992C2] text-sm mb-6 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#0B2D72]/80 mb-8 leading-relaxed text-base font-medium min-h-[100px]">
+                            “We appreciate the professionalism and dedication of the RKS team. They understand our
+                            requirements well and always deliver the right talent.”
+                        </p>
+                        <div class="flex items-center pt-6 border-t border-[#0B2D72]/10">
+                            <div
+                                class="size-12 bg-[#F6E7BC] rounded-full flex items-center justify-center mr-4 shrink-0 text-[#0B2D72]">
+                                <i class="fas fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-[#0B2D72] text-sm uppercase tracking-wider">Client Feedback
+                                </div>
+                                <div class="text-[#0992C2] text-xs font-bold">Industry Leader</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px] snap-center bg-[#0992C2] rounded-[2rem] p-8 relative overflow-hidden shadow-xl hover:-translate-y-2 transition-transform duration-500 group border border-[#0992C2]">
+                    <i
+                        class="fas fa-quote-right absolute -right-4 -top-4 text-8xl text-white/10 group-hover:text-[#F6E7BC]/20 transition-colors duration-500 z-0 rotate-12"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-[#F6E7BC] text-sm mb-6 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-white mb-8 leading-relaxed text-base font-medium min-h-[100px]">
+                            “Thanks to RKS Enterprises, I got a great job opportunity. The team guided me throughout the
+                            process and made everything smooth.”
+                        </p>
+                        <div class="flex items-center pt-6 border-t border-white/20">
+                            <div
+                                class="size-12 bg-white/20 rounded-full flex items-center justify-center mr-4 shrink-0 text-white backdrop-blur-sm">
+                                <i class="fas fa-user-graduate text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white text-sm uppercase tracking-wider">Candidate Feedback
+                                </div>
+                                <div class="text-[#F6E7BC] text-xs font-bold">Placed Professional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px] snap-center bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-xl hover:-translate-y-2 transition-transform duration-500 group border border-white/10">
+                    <i
+                        class="fas fa-quote-right absolute -right-4 -top-4 text-8xl text-[#F6E7BC]/50 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0 rotate-12"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-[#0992C2] text-sm mb-6 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#0B2D72]/80 mb-8 leading-relaxed text-base font-medium min-h-[100px]">
+                            “A trustworthy consultancy that genuinely helps candidates without charging any fees. Highly
+                            recommended!”
+                        </p>
+                        <div class="flex items-center pt-6 border-t border-[#0B2D72]/10">
+                            <div
+                                class="size-12 bg-[#F6E7BC] rounded-full flex items-center justify-center mr-4 shrink-0 text-[#0B2D72]">
+                                <i class="fas fa-user-check text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-[#0B2D72] text-sm uppercase tracking-wider">Candidate
+                                    Feedback</div>
+                                <div class="text-[#0992C2] text-xs font-bold">Successfully Placed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px] snap-center bg-white rounded-[2rem] p-8 relative overflow-hidden shadow-xl hover:-translate-y-2 transition-transform duration-500 group border border-white/10">
+                    <i
+                        class="fas fa-quote-right absolute -right-4 -top-4 text-8xl text-[#F6E7BC]/50 group-hover:text-[#0992C2]/10 transition-colors duration-500 z-0 rotate-12"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-[#0992C2] text-sm mb-6 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#0B2D72]/80 mb-8 leading-relaxed text-base font-medium min-h-[100px]">
+                            “Their strong network and industry knowledge make hiring easy and efficient. We look forward
+                            to continuing our association.”
+                        </p>
+                        <div class="flex items-center pt-6 border-t border-[#0B2D72]/10">
+                            <div
+                                class="size-12 bg-[#F6E7BC] rounded-full flex items-center justify-center mr-4 shrink-0 text-[#0B2D72]">
+                                <i class="fas fa-handshake text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-[#0B2D72] text-sm uppercase tracking-wider">Client Feedback
+                                </div>
+                                <div class="text-[#0992C2] text-xs font-bold">Valued Partner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center gap-2 mt-8 opacity-50">
+                <i class="fas fa-arrow-left text-[#F6E7BC]"></i>
+                <span class="text-[#F6E7BC] text-xs uppercase tracking-widest font-bold">Swipe / Scroll to
+                    explore</span>
+                <i class="fas fa-arrow-right text-[#F6E7BC]"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 lg:py-10 bg-[#F6E7BC] relative overflow-hidden font-sans">
+        <div
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#0992C2]/10 rounded-full blur-[120px] pointer-events-none -mt-32 -mr-32">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#0B2D72]/5 rounded-full blur-[100px] pointer-events-none -mb-32 -ml-32">
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-[#0B2D72]/5 border border-[#0B2D72]/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#0992C2] animate-ping"></span>
+                    <span class="text-[#0B2D72] text-xs font-black uppercase tracking-[0.2em]">Get In Touch</span>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0B2D72] leading-tight mb-6 tracking-tight">
+                    Partner With <span class="text-[#0992C2] italic">RKS Enterprises</span>
+                </h2>
+                <p class="text-[#0B2D72]/70 text-lg font-medium leading-relaxed">
+                    Whether you're looking for top talent to grow your business or seeking your next career opportunity,
+                    our team is here to help.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-12 items-stretch">
+
+                <div
+                    class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-[#0992C2]/10 h-full relative overflow-hidden group hover:border-[#0992C2]/30 transition-all duration-500">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-[#0992C2]/5 rounded-full blur-3xl"></div>
+
+                    <h3 class="text-2xl font-black text-[#0B2D72] mb-2 flex items-center gap-4 relative z-10">
+                        <div class="size-10 rounded-xl bg-[#0992C2]/10 flex items-center justify-center text-[#0992C2]">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        Apply For a Job
+                    </h3>
+                    <p class="text-[#0B2D72]/60 text-sm font-medium mb-8 relative z-10">Fill out the form below and our
+                        recruitment team will get in touch with you.</p>
+
+                    <form class="space-y-6 relative z-10" id="candidate-form">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-widest text-[#0B2D72]/60 ml-1">Full
+                                    Name *</label>
+                                <input type="text" name="name" required
+                                    class="w-full px-5 py-4 bg-[#F8FAFC] border-2 border-transparent rounded-2xl focus:border-[#0992C2] focus:bg-white focus:outline-none transition-all text-[#0B2D72] font-semibold placeholder:text-[#0B2D72]/30"
+                                    placeholder="John Doe">
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-widest text-[#0B2D72]/60 ml-1">Mobile
+                                    Number *</label>
+                                <input type="tel" name="phone" required
+                                    class="w-full px-5 py-4 bg-[#F8FAFC] border-2 border-transparent rounded-2xl focus:border-[#0992C2] focus:bg-white focus:outline-none transition-all text-[#0B2D72] font-semibold placeholder:text-[#0B2D72]/30"
+                                    placeholder="+91 00000 00000">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label
+                                class="block text-xs font-bold uppercase tracking-widest text-[#0B2D72]/60 ml-1">Email
+                                Address <span class="normal-case tracking-normal opacity-60">(Optional)</span></label>
+                            <input type="email" name="email"
+                                class="w-full px-5 py-4 bg-[#F8FAFC] border-2 border-transparent rounded-2xl focus:border-[#0992C2] focus:bg-white focus:outline-none transition-all text-[#0B2D72] font-semibold placeholder:text-[#0B2D72]/30"
+                                placeholder="youremail@example.com">
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-widest text-[#0B2D72]/60 ml-1">Highest
+                                    Qualification *</label>
+                                <select name="qualification" required
+                                    class="w-full px-5 py-4 bg-[#F8FAFC] border-2 border-transparent rounded-2xl focus:border-[#0992C2] focus:bg-white focus:outline-none transition-all text-[#0B2D72] font-semibold appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select Qualification</option>
+                                    <option value="10th_pass">10th Pass</option>
+                                    <option value="12th_pass">12th Pass</option>
+                                    <option value="iti">ITI</option>
+                                    <option value="diploma">Diploma</option>
+                                    <option value="graduate_ba_bcom_bsc">Graduate (BA/B.Com/B.Sc)</option>
+                                    <option value="btech_be">B.Tech / B.E</option>
+                                    <option value="post_graduate">Post Graduate</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-widest text-[#0B2D72]/60 ml-1">Experience
+                                    *</label>
+                                <select name="experience" required
+                                    class="w-full px-5 py-4 bg-[#F8FAFC] border-2 border-transparent rounded-2xl focus:border-[#0992C2] focus:bg-white focus:outline-none transition-all text-[#0B2D72] font-semibold appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select Experience</option>
+                                    <option value="fresher">Fresher (0 Years)</option>
+                                    <option value="0_1_years">0 - 1 Year</option>
+                                    <option value="1_3_years">1 - 3 Years</option>
+                                    <option value="3_5_years">3 - 5 Years</option>
+                                    <option value="5_plus_years">5+ Years</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label
+                                class="block text-xs font-bold uppercase tracking-widest text-[#0B2D72]/60 ml-1">Interested
+                                Job Role</label>
+                            <select name="job_role"
+                                class="w-full px-5 py-4 bg-[#F8FAFC] border-2 border-transparent rounded-2xl focus:border-[#0992C2] focus:bg-white focus:outline-none transition-all text-[#0B2D72] font-semibold appearance-none cursor-pointer">
+                                <option value="" disabled selected>Select Area of Interest</option>
+                                <option value="unskilled_helper">Unskilled / Helper</option>
+                                <option value="housekeeping">Semi-Skilled / Housekeeping</option>
+                                <option value="manufacturing_operator">Machine Operator / Forging</option>
+                                <option value="backend_office">Back Office / Retail</option>
+                                <option value="technical_engineering">Technical / Engineering</option>
+                                <option value="logistics_warehouse">Logistics / Warehouse</option>
+                                <option value="not_sure">Not Sure / Open to Options</option>
+                            </select>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-[#0B2D72] hover:bg-[#0992C2] text-white py-4 rounded-2xl font-black uppercase tracking-widest text-sm transition-colors duration-300 shadow-[0_10px_20px_-10px_rgba(11,45,114,0.5)] flex items-center justify-center gap-3 mt-4">
+                            Submit Application
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div
+                    class="bg-[#0B2D72] rounded-[2.5rem] p-8 md:p-12 shadow-2xl h-full relative overflow-hidden flex flex-col justify-between">
+                    <div
+                        class="absolute -right-10 -bottom-10 w-64 h-64 bg-[#0992C2]/20 rounded-full blur-3xl pointer-events-none">
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-black text-white mb-10 flex items-center gap-4 relative z-10">
+                            <div class="size-10 rounded-xl bg-white/10 flex items-center justify-center text-[#F6E7BC]">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            Contact Details
+                        </h3>
+
+                        <div class="space-y-8 relative z-10">
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="size-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#0992C2] group-hover:border-[#0992C2] transition-colors duration-300">
+                                    <i
+                                        class="fas fa-map-marker-alt text-2xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#F6E7BC] mb-1 text-sm uppercase tracking-widest">Head
+                                        Office</h4>
+                                    <p class="text-white/80 leading-relaxed font-medium">
+                                        HIG-129, K6, Kalinga Vihar,<br>
+                                        Bhubaneswar, Odisha-751019,<br>
+                                        India
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="size-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#0992C2] group-hover:border-[#0992C2] transition-colors duration-300">
+                                    <i
+                                        class="fas fa-phone-alt text-2xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#F6E7BC] mb-1 text-sm uppercase tracking-widest">Call Us
+                                        Directly</h4>
+                                    <a href="tel:+919777244554"
+                                        class="text-white text-xl font-bold hover:text-[#0992C2] transition-colors inline-block">+91
+                                        97772 44554</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="size-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#0992C2] group-hover:border-[#0992C2] transition-colors duration-300">
+                                    <i
+                                        class="fas fa-envelope text-2xl text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#F6E7BC] mb-1 text-sm uppercase tracking-widest">Email
+                                        Support</h4>
+                                    <a href="mailto:ganjamhiring@gmail.com"
+                                        class="text-white/90 font-medium hover:text-[#0992C2] transition-colors inline-block">ganjamhiring@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-white/10 relative z-10">
+                        <h4 class="font-bold text-white mb-6 text-sm uppercase tracking-widest">Connect Digitally</h4>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="size-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-[#F6E7BC] hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] hover:-translate-y-1 transition-all duration-300">
+                                <i class="fab fa-facebook-f text-lg"></i>
+                            </a>
+                            <a href="#"
+                                class="size-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-[#F6E7BC] hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] hover:-translate-y-1 transition-all duration-300">
+                                <i class="fab fa-linkedin-in text-lg"></i>
+                            </a>
+                            <a href="#"
+                                class="size-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-[#F6E7BC] hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] hover:-translate-y-1 transition-all duration-300">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                            <a href="#"
+                                class="size-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-[#F6E7BC] hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] hover:-translate-y-1 transition-all duration-300">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Added Inquiry Modal Form -->
+    <div id="inquiryModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+        <div class="bg-primary-800 rounded-2xl p-8 max-w-md w-full animate-on-scroll">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Send Us an Inquiry</h3>
+                <button onclick="closeInquiryModal()" class="text-white hover:text-accent-400 text-2xl">×</button>
+            </div>
+
+            <form id="inquiryForm" class="space-y-4">
+
+                <!-- Name -->
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Full Name *</label>
+                    <input type="text" name="name" required
+                        class="w-full px-4 py-2 rounded-lg bg-primary-700 border border-primary-600 text-white placeholder-gray-400 focus:outline-none focus:border-accent-400"
+                        placeholder="Your name">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Phone Number *</label>
+                    <input type="tel" name="phone" required
+                        class="w-full px-4 py-2 rounded-lg bg-primary-700 border border-primary-600 text-white placeholder-gray-400 focus:outline-none focus:border-accent-400"
+                        placeholder="+91 91247 91247">
+                </div>
+
+                <!-- Button -->
+                <button type="submit"
+                    class="w-full btn-primary text-primary-950 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
+                    Send Inquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B2D72] pt-24 pb-12 relative overflow-hidden font-sans border-t-[6px] border-[#0992C2]">
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0992C2]/20 rounded-full blur-[150px] pointer-events-none -mt-32 -mr-32">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#F6E7BC]/5 rounded-full blur-[100px] pointer-events-none -mb-32 -ml-32">
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+
+                <div class="lg:pr-6">
+                    <div class="flex items-center gap-3 mb-6 group">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#0992C2] to-[#0B2D72] rounded-2xl flex items-center justify-center border border-[#0992C2]/50 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-briefcase text-2xl text-[#F6E7BC]"></i>
+                        </div>
+                        <div>
+                            <span class="text-2xl font-black text-white tracking-tight">RKS <span
+                                    class="text-[#0992C2]">Enterprises</span></span>
+                            <div class="text-xs text-[#F6E7BC] font-bold uppercase tracking-widest mt-0.5">Recruitment
+                                Partner</div>
+                        </div>
+                    </div>
+                    <p class="text-white/70 mb-8 leading-relaxed text-sm font-medium">
+                        Connecting elite talent with industry leaders. Your trusted recruitment partner for
+                        manufacturing, automobile, and complete staffing solutions across India.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="size-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="size-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="size-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#0992C2] hover:text-white hover:border-[#0992C2] transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-[#F6E7BC] font-black uppercase tracking-widest mb-6 text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-white/80 font-medium">
+                        <li><a href="#home"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-chevron-right text-[10px] text-[#0992C2] group-hover:translate-x-1 transition-transform"></i>
+                                Home</a></li>
+                        <li><a href="#about"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-chevron-right text-[10px] text-[#0992C2] group-hover:translate-x-1 transition-transform"></i>
+                                About Us</a></li>
+                        <li><a href="#services"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-chevron-right text-[10px] text-[#0992C2] group-hover:translate-x-1 transition-transform"></i>
+                                Our Services</a></li>
+                        <li><a href="#process"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-chevron-right text-[10px] text-[#0992C2] group-hover:translate-x-1 transition-transform"></i>
+                                Recruitment Process</a></li>
+                        <li><a href="#contact"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-chevron-right text-[10px] text-[#0992C2] group-hover:translate-x-1 transition-transform"></i>
+                                Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#F6E7BC] font-black uppercase tracking-widest mb-6 text-sm">Top Services</h4>
+                    <ul class="space-y-4 text-white/80 font-medium">
+                        <li><a href="#services"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-users-cog text-[#0992C2] text-xs"></i> Manpower Recruitment</a></li>
+                        <li><a href="#services"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-layer-group text-[#0992C2] text-xs"></i> Bulk Hiring Solutions</a>
+                        </li>
+                        <li><a href="#services"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-user-graduate text-[#0992C2] text-xs"></i> ITI & Fresher Hiring</a>
+                        </li>
+                        <li><a href="#services"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-file-contract text-[#0992C2] text-xs"></i> Contract Staffing</a></li>
+                        <li><a href="#services"
+                                class="group flex items-center gap-3 hover:text-[#0992C2] transition-colors"><i
+                                    class="fas fa-sync-alt text-[#0992C2] text-xs"></i> End-to-End Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[#F6E7BC] font-black uppercase tracking-widest mb-6 text-sm">Get In Touch</h4>
+                    <div class="space-y-6 text-white/80 text-sm font-medium">
+                        <div class="flex items-start gap-4 group">
+                            <div
+                                class="size-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#0992C2] group-hover:border-[#0992C2] transition-colors">
+                                <i
+                                    class="fas fa-map-marker-alt text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                            </div>
+                            <p class="leading-relaxed pt-1 group-hover:text-white transition-colors">
+                                HIG-129, K6, Kalinga Vihar,<br>
+                                Bhubaneswar, Odisha-751019,<br>
+                                India
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div
+                                class="size-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#0992C2] group-hover:border-[#0992C2] transition-colors">
+                                <i class="fas fa-phone-alt text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                            </div>
+                            <a href="tel:+919777244554"
+                                class="hover:text-[#0992C2] transition-colors text-base font-bold">+91 97772 44554</a>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div
+                                class="size-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#0992C2] group-hover:border-[#0992C2] transition-colors">
+                                <i class="fas fa-envelope text-[#F6E7BC] group-hover:text-white transition-colors"></i>
+                            </div>
+                            <a href="mailto:ganjamhiring@gmail.com"
+                                class="hover:text-[#0992C2] transition-colors">ganjamhiring@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/50 text-sm font-medium text-center md:text-left">
+                    &copy; 2026 RKS Enterprises. All rights reserved. <br class="md:hidden">
+                    <span class="md:ml-2">Designed with <i class="fas fa-heart text-[#0992C2] mx-1"></i> Spider
+                        Innovative.</span>
+                </p>
+                <div class="flex justify-center space-x-6 text-sm font-medium text-white/50">
+                    <a href="#" class="hover:text-[#F6E7BC] transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#F6E7BC] transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-[#F6E7BC] transition-colors">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span
+            class="absolute top-6 right-6 text-white text-4xl cursor-pointer z-10 hover:text-accent-400 transition-colors"
+            onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="/placeholder.svg" alt="" class="animate-fade-in">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-5 z-[999] w-14 h-14 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center text-primary-950 text-xl opacity-0 invisible transition-all duration-300 hover:scale-110 z-30">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="success-modal"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300">
+        <div
+            class="card-enhanced rounded-3xl p-8 max-w-md mx-4 text-center transform scale-95 transition-transform duration-300">
+            <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-check text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 gradient-text">Thank You!</h3>
+            <p class="text-gray-300 mb-6">Your message has been sent successfully. We'll get back to you within 24
+                hours.</p>
+            <button onclick="closeSuccessModal()"
+                class="btn-primary text-primary-950 px-6 py-3 rounded-xl font-semibold">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+
+            // Animate hamburger to X
+            if (mobileMenu.classList.contains('hidden')) {
+                hamburgerLines[0].style.transform = 'rotate(0deg) translateY(0px)';
+                hamburgerLines[1].style.opacity = '1';
+                hamburgerLines[2].style.transform = 'rotate(0deg) translateY(0px)';
+            } else {
+                hamburgerLines[0].style.transform = 'rotate(45deg) translateY(8px)';
+                hamburgerLines[1].style.opacity = '0';
+                hamburgerLines[2].style.transform = 'rotate(-45deg) translateY(-8px)';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    hamburgerLines[0].style.transform = 'rotate(0deg) translateY(0px)';
+                    hamburgerLines[1].style.opacity = '1';
+                    hamburgerLines[2].style.transform = 'rotate(0deg) translateY(0px)';
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        const navbar = document.getElementById('navbar');
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('glass-dark');
+            } else {
+                navbar.classList.remove('glass-dark');
+            }
+
+            // Back to top button
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        // Back to top functionality
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate on scroll with Intersection Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Lightbox functionality
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            lightboxImg.src = src;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Close lightbox on click outside image
+        document.getElementById('lightbox').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+
+
+        // Contact form handling with enhanced validation
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // Name validation
+            if (!data.name || data.name.length < 2) {
+                showAlert('Please enter a valid name (at least 2 characters).', 'error');
+                return;
+            }
+
+            // WhatsApp validation
+            if (!data.whatsapp || !/^[6-9]\d{9}$/.test(data.whatsapp)) {
+                showAlert('Please enter a valid 10-digit WhatsApp number.', 'error');
+                return;
+            }
+
+            // Location validation
+            if (!data.location) {
+                showAlert('Please select your location.', 'error');
+                return;
+            }
+
+            // Button loading
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div class="loading-spinner mr-2"></div>Sending...';
+            submitBtn.disabled = true;
+
+            // After delay → open WhatsApp
+            setTimeout(() => {
+                const message =
+                    `New Enquiry:%0A` +
+                    `Name: ${data.name}%0A` +
+                    `Phone: ${data.phone}%0A` +
+                    `WhatsApp: ${data.whatsapp}%0A` +
+                    `Property: ${data.property || 'Not selected'}%0A` +
+                    `Location: ${data.location}%0A`;
+
+                window.open(`https://wa.me/919124791247?text=${message}`, "_blank");
+
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+
+                showSuccessModal();
+            }, 1000);
+        });
+
+        // Success modal functions
+        function showSuccessModal() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.remove('opacity-0', 'invisible');
+            modal.querySelector('.card-enhanced').classList.remove('scale-95');
+        }
+
+        function closeSuccessModal() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.add('opacity-0', 'invisible');
+            modal.querySelector('.card-enhanced').classList.add('scale-95');
+        }
+
+        // Alert function
+        function showAlert(message, type = 'info') {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `fixed top-24 right-4 z-50 p-4 rounded-xl max-w-sm transform translate-x-full transition-transform duration-300 ${type === 'error' ? 'bg-red-500' : 'bg-green-500'
+                } text-white`;
+            alertDiv.innerHTML = `
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-${type === 'error' ? 'exclamation-triangle' : 'check-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+
+            document.body.appendChild(alertDiv);
+
+            setTimeout(() => {
+                alertDiv.style.transform = 'translateX(0)';
+            }, 100);
+
+            setTimeout(() => {
+                alertDiv.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(alertDiv);
+                }, 300);
+            }, 4000);
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-bg');
+            if (parallax) {
+                const speed = scrolled * 0.5;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Add active nav link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-accent-400');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-accent-400');
+                }
+            });
+        });
+
+        // Add typing effect to hero title (optional enhancement)
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('#home h1');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 50);
+            }
+        }, 1500);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for intersection observer support
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Jab element screen par dikhe, 'animate' class jod dein
+                            entry.target.classList.add('animate');
+                            // Ek baar animate hone ke baad, observe karna band kar dein
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    rootMargin: '0px',
+                    // Kitna hissa dikhna chahiye animation trigger hone ke liye (10%)
+                    threshold: 0.1
+                });
+
+                // Page ke sabhi elements jismein 'animate-on-scroll' class hai, unhe observe karein
+                document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                    observer.observe(element);
+                });
+            } else {
+                // Old browsers ke liye fallback: elements ko turant dikha dein
+                document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                    element.classList.add('animate');
+                });
+            }
+
+            // --- (Aapki dusri scripts, jaise navbar active state ya typing effect, yahaan aayengi) ---
+
+        });
+
+        function openInquiryModal() {
+            document.getElementById('inquiryModal').classList.remove('hidden');
+        }
+
+        function closeInquiryModal() {
+            document.getElementById('inquiryModal').classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('inquiryModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeInquiryModal();
+            }
+        });
+
+        // Handle form submission
+        document.getElementById('inquiryForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.querySelector('input[name="name"]').value;
+            const phone = document.querySelector('input[name="phone"]').value;
+
+            // Create WhatsApp message
+            const whatsappMessage =
+                `Hello, I'm interested in Parsuram Bhuman.%0A%0A` +
+                `Name: ${name}%0A` +
+                `Phone: ${phone}`;
+
+            // Send via WhatsApp
+            window.open(`https://wa.me/919124791247?text=${whatsappMessage}`, '_blank');
+
+            // Close modal after submission
+            closeInquiryModal();
+
+            // Reset form
+            this.reset();
+        });
+
+    </script>
+</body>
+
+</html>
